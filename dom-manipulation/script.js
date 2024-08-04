@@ -20,8 +20,15 @@ let quotes = [
     let form = document.createElement("form");
     let newQoute = document.getElementById("newQouteText");
     let newCat = document.getElementById("newQouteCategory");
-  }
 
+    document.getElementById("addQoute()").appendChild(form);
+  }
+  submitButton.addEventListener("click", (addQoute) => {
+    e.preventDefault();
+    quotes.push(newQuote);
+    displayQuote(newQuote);
+  });
+  
   //calling each function  
   showRandomQuote();
   createAddQuoteForm();
