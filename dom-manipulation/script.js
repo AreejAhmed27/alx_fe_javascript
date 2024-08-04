@@ -1,20 +1,27 @@
 // Array of quote objects
 let quotes = [
     {
-         text: "The only way to do great work is to love what you do.", 
+         text: "The only way to move forward is to simply move.", 
          category: "Inspiration" },
     { 
-        text: "Believe you can and you're halfway there.", 
+        text: "Believe in yourself, trust yourself and no one in the world will be able to break that bond.", 
         category: "Motivation" },
     { 
-        text: "It does not matter how slowly you go as long as you do not stop.", 
+        text: "You will never lose if you never quit.", 
         category: "Perseverance" },
   ];
-  
-  // Function to display a random quote through the index
-  function displayRandomQuote() {
+
+  function showRandomQuote() {
     let randomIndex = Math.floor(Math.random() * quotes.length);
-    let randomQuote = quotes[randomIndex];
+    document.getElementById("qouteDisplay").innerHTML = quotes[randomIndex];
   }
+  
+  function createAddQuoteForm() {
+    let form = document.createElement("form");
+    let newQoute = document.getElementById("newQouteText");
+    let newCat = document.getElementById("newQouteCategory");
+  }
+
   //calling each function  
-  displayRandomQuote();
+  showRandomQuote();
+  createAddQuoteForm();
