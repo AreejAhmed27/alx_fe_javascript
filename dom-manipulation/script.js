@@ -12,9 +12,9 @@ let quotes = [
   ];
   
   // Function to display a random quote through the index
-  function showRandomQuote() {
+  function displayRandomQuote() {
     let randomIndex = Math.floor(Math.random() * quotes.length);
     let randomQuote = quotes[randomIndex];
   }
   //calling each function  
-  showRandomQuote();
+  displayRandomQuote();
